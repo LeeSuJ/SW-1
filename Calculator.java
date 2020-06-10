@@ -7,6 +7,10 @@
  */
 public class Calculator
 {
+    /**나이랑 구작별로 입장료를 할인해 주는 메소드
+     * age는 나이 past는 구작여부 
+     * 가격은 10000원으로 고정
+     */
     public int Calculator(int age, boolean past){
         double rate = 10000;
         
