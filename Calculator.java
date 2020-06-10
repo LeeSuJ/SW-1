@@ -7,13 +7,14 @@
  */
 public class Calculator
 {
-    /**나이랑 구작별로 입장료를 할인해 주는 메소드
-     * age는 나이 past는 구작여부 
-     * 가격은 10000원으로 고정
+    /**
+     * 나이와 구작 여부를 입력받아 입장료 할인값을 계산하여 반환하는 메소드
+     * 
+     * @param age 나이, past 구작 여부 
+     * @return rate 가격 10000원으로 초기값 설정
      */
     public int Calculator(int age, boolean past){
         double rate = 10000;
-        
         if(past == false){
             if (age <= 18){
                 rate = rate * 0.9;
