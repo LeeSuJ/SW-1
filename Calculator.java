@@ -7,20 +7,20 @@
  */
 public class Calculator
 {
-    public double Calculator(int age, boolean past){
+    public int Calculator(int age, boolean past){
         double rate = 10000;
         
-        if(past = false){
+        if(past == false){
             if (age <= 18){
-                rate = rate * 1.1;
+                rate = rate * 0.9;
             }
             else if (age >= 65){
-                rate = rate * 1.2;
+                rate = rate * 0.8;
             }
         }
-        else if(past = true){
+        else if(past == true){
             rate = rate * 0.5;
         }
-        return rate;
+        return (int)rate;
     }
 }
